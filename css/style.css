@@ -243,7 +243,7 @@ input {
     background: red;
     box-shadow: 0px 0px 1px #D32F2F;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .cover-holder input[type=text] {
         font-size: 15px;
     }
