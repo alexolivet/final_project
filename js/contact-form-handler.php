@@ -22,8 +22,8 @@ $email_address))
 if( empty($errors))
 {
 	$to = $email_address;
-	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. ".
+	$email_subject = "Positive Words for : $name";
+	$email_body = "Your positive words have arrived!. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
 	$headers .= "Reply-To: $email_address";
