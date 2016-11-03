@@ -256,6 +256,19 @@ input {
 
 /* error page styling */
 
+.part3{
+    margin:0;
+    background-image: url(../images/front.jpg);
+    background-size: contain;
+    background-position: center;
+}
+#error {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 20px;
+}
+
 #error a {
     text-decoration: underline;
 }

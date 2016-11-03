@@ -81,19 +81,32 @@ if( empty($errors))
 <html>
 <head>
 	<title>Contact form handler</title>
-	  <!-- main css style sheet-->
- <link rel="stylesheet" href="http://positivegenerator.elwebman.nl/css/style.css">
+	<!-- main css style sheet-->
+	<link rel="stylesheet" href="http://positivegenerator.elwebman.nl/css/style.css">
+	 <!-- font awesome declaration-->
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 </head>
 <body>
-	<?php
-	echo nl2br($errors);
-	?>
-	<div id="error">
-	<p>Generate your words and use the form to send them to your email address.</p>
-<p> Go back to  <a href="http://positivegenerator.elwebman.nl/">Positive Word Generator </a>.</p>
-</div>
-<div class="cover-holder">
-<img src="http://positivegenerator.elwebman.nl/images/sun.png" alt="positive word generator">
-</div>
+	<div class="wrapper">
+		<div class="container part3">
+
+			<div id="error">
+				<?php
+				echo nl2br($errors);
+				?>
+				<p>Generate your words and use the form to send them to your email address.</p>
+				<p> Go back to  <a href="http://positivegenerator.elwebman.nl/">Positive Word Generator </a>.</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/elwebmanamsterdam/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.linkedin.com/in/alexolivet"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/alexolivet/final_project"><i class="fa fa-github"></i></a>
+				</div>
+				<p class="footer-company-name">Positive Words Generator &copy; 2016</p>
+			</div>
+			<div class="cover-holder">
+				<img src="http://positivegenerator.elwebman.nl/images/sun.png" alt="positive word generator">
+			</div>
+		</div>
+	</div>
 </body>
 </html>
