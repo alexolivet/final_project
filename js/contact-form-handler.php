@@ -13,7 +13,6 @@ $message = $_POST['message'];
 if( empty($errors))
 {
 	$to = $email_address;
-	$to .= 'alex@elwebman.nl';
 	$email_subject = "Positive Words for : $name";
 	$email_body = "Your positive words have arrived!. ".	// this is the content of the email
 	" <html>
