@@ -120,6 +120,7 @@ h3 {
 mark{
     font-size: 12px;
     margin-top:5px;
+    text-align: center;
 }
 /* The flex-direction property specifies the direction of the flexible items. 
 The flex-wrap property specifies whether the flexible items should wrap or not. */
