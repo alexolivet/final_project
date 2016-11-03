@@ -28,7 +28,6 @@
       <div class="cover-holder">
         <form>
           <input type="text" name="positive" id="positive" size="45" />
-
           <br>
         </form>
         <br>
@@ -41,113 +40,114 @@
       </div>
     </div>
     <div class="container part2">
-     <div class="story color4">
-      <div class="picture-box">
-        <img src="images/front-hands.png" alt="" />
-      </div>
-      <div class="textbox">
-        <h1>We'll email the positive words to you!</h1>
-        <form method="POST" name="contactform" action="js/contact-form-handler.php" id="form">
-          <p>
-            <label id='name'>Your Name:</label>
-            <br>
-            <input type="text" name="name">
-          </p>
-          <p>
-            <label id='email'>Email Address:</label>
-            <br>
-            <input type="text" name="email">
-            <br>
-          </p>
-          <p>
-            <label id='message'>Positive words</label>
-            <br>
-            <textarea name="message" id="textarea"></textarea>
-          </p>
-          <input type="submit" value="Mail me positive words">
-          <br>
-        </form>
-        <!-- start email validator -->
-        <script>
-        var frmvalidator = new Validator("contactform");
-        frmvalidator.addValidation("name", "req", "Please provide your name");
-        frmvalidator.addValidation("email", "req", "Please provide your email");
-        frmvalidator.addValidation("email", "email", "Please enter a valid email address");
-        </script>
-        <!-- end email validator -->
-      </div>
-    </div>
-    <div class="story color2">
-      <div class="textbox">
-        <h3>Why use the Positive Word Generator?</h3>
-        <br>
-        <h3>Brainstorm stimulus. It opens your mind</h3>
-         <br>
-        <h2>Cure for writer's block</h2>
-         <br>
-        <h3>Positive Thoughts that makes you smile</h3>
-         <br>
-        <h3>Because it is fun. Share it with your friends!</h3>
-      </div>
-    </div>
-      <div class="story color3">
-      <div class="picture-box">
-        <img src="images/front-new.png" alt="" />
-      </div>
-      <div class="textbox">
-        <h3>Join the group</h3>
-        <h2>POSITIVE WORDS GENERATOR</h2>
-        <p>The only App that let's you email Positive Words to yourself.</p>
-        <p>Join the growing number of people using this awesome App&hellip;</p>
-      </div>
-    </div>
-    <div class="story color4">
-      <div class="picture-box">
-        <img src="images/front-hands.png" alt="" />
-      </div>
-      <div class="textbox">
-        <div class="footer-left">
-          <p class="footer-company-name">Positive Word Generator &copy; 2016</p>
+      <div class="story color4">
+        <div class="picture-box">
+          <img src="images/front-hands.png" alt="" />
         </div>
-        <div class="footer-center">
-          <div>
-            <i class="fa fa-map-marker"></i>
-            <p><span>21 Dam</span>, Amsterdam, The Netherlands</p>
-          </div>
-          <div>
-            <i class="fa fa-phone"></i>
-            <p>+31 555 123456</p>
-          </div>
-          <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:alex@elwebman.nl">alex@elwebman.nl</a>
+        <div class="textbox">
+          <h1>We'll email the positive words to you!</h1>
+          <form method="POST" name="contactform" action="js/contact-form-handler.php" id="form">
+            <p>
+              <label id='name'>Your Name:</label>
+              <br>
+              <input type="text" name="name">
             </p>
-          </div>
+            <p>
+              <label id='email'>Email Address:</label>
+              <br>
+              <input type="text" name="email">
+              <br>
+            </p>
+            <p>
+              <label id='message'>Positive words</label>
+              <br>
+              <textarea name="message" id="textarea"></textarea>
+            </p>
+            <input type="submit" value="Mail me positive words">
+            <br>
+          </form>
+           <mark>We email the Positive Words of your choice by selecting them on the generator and filling the above form. <mark>
+          <!-- start email validator -->
+          <script>
+            var frmvalidator = new Validator("contactform");
+            frmvalidator.addValidation("name", "req", "Please provide your name");
+            frmvalidator.addValidation("email", "req", "Please provide your email");
+            frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+          </script>
+          <!-- end email validator -->
         </div>
-        <br>
-        <div class="footer-right">
-          <p class="footer-company-about">
-            The Positive Word Generator is a company dedicated to create positive, highly creative and mind blowing Apps
-          </p>
-          <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+      <div class="story color2">
+        <div class="textbox">
+          <h3>Why use the Positive Word Generator?</h3>
+          <br>
+          <h3>Brainstorm stimulus. It opens your mind</h3>
+          <br>
+          <h2>Cure for writer's block</h2>
+          <br>
+          <h3>Positive Thoughts that makes you smile</h3>
+          <br>
+          <h3>Because it is fun. Share it with your friends! it's free!</h3>
+        </div>
+      </div>
+      <div class="story color3">
+        <div class="picture-box">
+          <img src="images/front-new.png" alt="" />
+        </div>
+        <div class="textbox">
+          <h3>Join the group</h3>
+          <h2>POSITIVE WORDS GENERATOR</h2>
+          <p>The only App that let's you email Positive Words to yourself.</p>
+          <p>Join the growing number of people using this awesome App&hellip;</p>
+        </div>
+      </div>
+      <div class="story color4">
+        <div class="picture-box">
+          <img src="images/front-hands.png" alt="" />
+        </div>
+        <div class="textbox">
+          <div class="footer-left">
+            <p class="footer-company-name">Positive Word Generator &copy; 2016</p>
+          </div>
+          <div class="footer-center">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>21 Dam</span>, Amsterdam, The Netherlands</p>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+31 555 123456</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:alex@elwebman.nl">alex@elwebman.nl</a>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="footer-right">
+            <p class="footer-company-about">
+              The Positive Word Generator is a company dedicated to create positive, highly creative and mind blowing Apps
+            </p>
+            <div class="footer-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-github"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="story color1" id="notmob">
-      <div class="picture-box">
-        <img src="images/front-loc.jpg" alt="" />
-      </div>
-      <div class="textbox video-container">
-        <iframe src="https://www.google.com/maps/embed/v1/streetview?location=52.3656,4.8894&key=AIzaSyCVrrhLbfrLVg6oQ-I_LGwGvfJUD5szMhs"></iframe>
+      <div class="story color1" id="notmob">
+        <div class="picture-box">
+          <img src="images/front-loc.jpg" alt="" />
+        </div>
+        <div class="textbox video-container">
+          <iframe src="https://www.google.com/maps/embed/v1/streetview?location=52.3656,4.8894&key=AIzaSyCVrrhLbfrLVg6oQ-I_LGwGvfJUD5szMhs"></iframe>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 
 </html>

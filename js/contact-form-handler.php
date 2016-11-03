@@ -5,7 +5,7 @@ if(empty($_POST['name'])  ||
 	empty($_POST['email']) || 
 	empty($_POST['message']))
 {
-	$errors .= "\n Error: all fields are required";
+	$errors .= "\n Error: all fields are required.";
 }
 
 $name = $_POST['name']; 
@@ -24,8 +24,7 @@ if( empty($errors))
 	$to = $email_address;
 	$email_subject = "Positive Words for : $name";
 	$email_body = "Your positive words have arrived!. ".	// this is the content of the email
-	" 
-	<html>
+	" <html>
 	<head>
 	<title>Positive Word generator</title>
 	<style>
@@ -87,7 +86,7 @@ if( empty($errors))
 	<?php
 	echo nl2br($errors);
 	?>
-
+<p> Go back to  <a href="http://www.elwebman.nl/pwg/">Positive Word Generator </a></p>
 
 </body>
 </html>

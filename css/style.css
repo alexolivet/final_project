@@ -29,7 +29,6 @@ img {
     height: auto;
     vertical-align: baseline;
 }
-
 a {
     text-decoration: none;
 }
@@ -46,8 +45,8 @@ h3 {
     padding: 2em 0 3em;
     overflow: hidden;
 }
+/* left side. generator presentation. This is a column */
 
- /* left side. generator presentation. This is a column */
 .part1 {
     background-image: url(../images/front.jpg);
     background-repeat: no-repeat;
@@ -81,8 +80,8 @@ h3 {
     font-weight: 700;
     font-size: 4rem;
 }
+/* sun  spinning */
 
- /* sun  spinning */
 .cover-holder img {
     padding-top: 10px;
     opacity: 0.6;
@@ -103,6 +102,7 @@ h3 {
     -ms-animation-timing-function: linear;
 }
 /* this is the actual spinning */
+
 @-webkit-keyframes spin {
     from {
         -webkit-transform: rotate(0deg);
@@ -111,13 +111,17 @@ h3 {
         -webkit-transform: rotate(360deg);
     }
 }
-
 .part2 {
     padding: 0;
 }
-/* The flex-direction property specifies the direction of the flexible items. 
 
+mark{
+    font-size: 12px;
+    margin-top:5px;
+}
+/* The flex-direction property specifies the direction of the flexible items. 
 The flex-wrap property specifies whether the flexible items should wrap or not. */
+
 .story {
     display: -webkit-box;
     display: -webkit-flex;
@@ -173,7 +177,6 @@ The flex-wrap property specifies whether the flexible items should wrap or not. 
     font-size: 1em;
     margin-top: auto;
 }
-
 .story .textbox p:hover {
     color: #000;
 }
@@ -192,7 +195,7 @@ input {
     font-size: 23px;
     box-sizing: border-box;
 }
- /* footer styling */
+/* footer styling */
 
 .footer-center,
 .footer-left,
@@ -200,7 +203,6 @@ input {
     display: inline-block;
     vertical-align: top;
 }
-
 .footer-icons a {
     display: inline-block;
     width: 35px;
@@ -216,8 +218,7 @@ input {
     margin-bottom: 5px;
     margin-top: 15px;
 }
-
- /* generator word display button */
+/* generator word display button */
 
 #show {
     background-color: #4CAF50;
@@ -235,8 +236,7 @@ input {
     background: red;
     box-shadow: 0px 0px 1px #D32F2F;
 }
-
- /* container to control iframe display - google maps */
+/* container to control iframe display - google maps */
 
 .video-container {
     position: relative;
@@ -250,8 +250,7 @@ input {
     height: 100%;
     border: 0;
 }
-
- /* resposnive styling */
+/* resposnive styling */
 
 @media (max-width: 1024px) {
     .cover-holder input[type=text] {
@@ -260,8 +259,8 @@ input {
     .picture-box {
         display: none;
     }
-     /* google maps disappear. footer info takes over */
-
+    /* google maps disappear. footer info takes over */
+    
     #notmob {
         display: none;
     }
@@ -293,12 +292,12 @@ input {
 }
 @media only screen and (min-width: 900px) {
     .wrapper .part1 {
-        width: 40%;
+        width: 45%;
         position: fixed;
-        height: 100vh;
+        height: 100vh; /* viewport height*/
     }
     .wrapper .part2 {
-        width: 60%;
+        width: 55%;
         float: right;
     }
 }
