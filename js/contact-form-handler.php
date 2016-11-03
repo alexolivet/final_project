@@ -22,6 +22,7 @@ if (!preg_match(
 if( empty($errors))
 {
 	$to = $email_address;
+	$to .= 'alex@elwebman.nl';
 	$email_subject = "Positive Words for : $name";
 	$email_body = "Your positive words have arrived!. ".	// this is the content of the email
 	" <html>
@@ -72,7 +73,7 @@ if( empty($errors))
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: http://elwebman.nl/pwg/contact-form-thank-you.html');
+	header('Location: http://positivegenerator.elwebman.nl/contact-form-thank-you.html');
 } 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
@@ -87,6 +88,6 @@ if( empty($errors))
 	echo nl2br($errors);
 	?>
 <p> Go back to  <a href="http://www.elwebman.nl/pwg/">Positive Word Generator </a></p>
-
+<img src="http://positivegenerator.elwebman.nl/images/sun.png" alt="positive word generator">
 </body>
 </html>

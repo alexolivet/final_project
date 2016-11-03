@@ -77,10 +77,10 @@ function generator() {
     );
 
     var verbs = new Array(
-        'actualize', 'administrate', 'aggregate', 'architect', 'benchmark', 'brand', 'build', 'communicate', 'conceptualize',
-        'coordinate', 'create', 'cultivate', 'customize', 'deliver', 'deploy', 'develop', 'disintermediate', 'disseminate',
-        'drive', 'embrace', 'e-enable', 'empower', 'enable', 'engage', 'engineer', 'enhance', 'envisioneer', 'evisculate',
-        'evolve', 'expedite', 'exploit', 'extend', 'fabricate', 'facilitate', 'fashion', 'formulate', 'foster', 'generate',
+        'actualize', 'administrate', 'aggregate', 'arranged', 'Lionize', 'architect', 'reconciled', 'benchmark', 'brand', 'build', 'communicate', 'conceptualize',
+        'coordinate', 'create', 'cultivate', 'customize', 'deliver', 'deploy', 'develop', 'disintermediate', 'disseminate', 'love', 'luster', 'lavish',
+        'drive', 'embrace', 'e-enable', 'empower', 'enable', 'engage', 'engineer', 'enhance', 'envisioneer', 'evisculate', 'liberate', 'zoom', 'zap',
+        'evolve', 'expedite', 'exploit', 'extend', 'fabricate', 'facilitate', 'fashion', 'formulate', 'foster', 'generate', 'zing', 'pacify',
         'grow', 'harness', 'impact', 'implement', 'incentivize', 'incubate', 'initiate', 'innovate', 'integrate', 'iterate',
         'leverage existing', 'leverage other\'s', 'maintain', 'matrix', 'maximize', 'mesh', 'monetize', 'morph', 'myocardinate',
         'negotiate', 'network', 'optimize', 'orchestrate', 'parallel task', 'plagiarize', 'pontificate', 'predominate',
@@ -140,8 +140,8 @@ function generator() {
         'summer', 'summertime', 'sun', 'sunbeam', 'sunlight', 'sunniness', 'sunshine', 'superabundance', 'tranquillity',
         'utopia', 'verdure', 'vibrancy', 'virgin', 'vitality', 'warmth', 'wholesomeness', 'wildflower', 'wonderland'
     );
-    
-     // this link the arrays to the loop function above
+
+    // this link the arrays to the loop function above
     adjectives = randomarray(adjectives);
     nouns = randomarray(nouns);
     adverbs = randomarray(adverbs);
