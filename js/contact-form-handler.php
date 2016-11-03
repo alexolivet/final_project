@@ -36,7 +36,8 @@ if( empty($errors))
 	<body>
 	<br>
 	<br>
-	<p>Hello \n $name ,Thank you for contacting us. </p>
+	<p>Hello \n $name, </p>
+	<p>Thank you for contacting us.</p>
 	<br>
 	<br>
 	<p>Your Positive Words Have Arrived!</p>
