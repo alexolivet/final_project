@@ -5,7 +5,7 @@ if(empty($_POST['name'])  ||
 	empty($_POST['email']) || 
 	empty($_POST['message']))
 {
-	$errors .= "\n Error: all fields are required.";
+	$errors .= "\n Error: all fields are required. You need to generate positive words.";
 }
 
 $name = $_POST['name']; 
@@ -76,18 +76,24 @@ if( empty($errors))
 	header('Location: http://positivegenerator.elwebman.nl/contact-form-thank-you.html');
 } 
 ?>
+<!-- This page is displayed only if there is some error -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
 <head>
 	<title>Contact form handler</title>
+	  <!-- main css style sheet-->
+ <link rel="stylesheet" href="http://positivegenerator.elwebman.nl/css/style.css">
 </head>
-
 <body>
-	<!-- This page is displayed only if there is some error -->
 	<?php
 	echo nl2br($errors);
 	?>
-<p> Go back to  <a href="http://www.elwebman.nl/pwg/">Positive Word Generator </a></p>
+	<div id="error">
+	<p>Generate your words and use the form to send them to your email address.</p>
+<p> Go back to  <a href="http://positivegenerator.elwebman.nl/">Positive Word Generator </a>.</p>
+</div>
+<div class="cover-holder">
 <img src="http://positivegenerator.elwebman.nl/images/sun.png" alt="positive word generator">
+</div>
 </body>
 </html>
