@@ -1,6 +1,6 @@
 Synopsis
 
-Build a javascript running through different arrays containing different ;positive' words. the return value is send to a location on page.
+Build a javascript running through different arrays containing different 'positive' words. the return value is send to a location on page.
 This is what the word generator is about. I added php to allow the words to be sent onto user of choice. Used flexbox as css.
 Keeping the product on one side of the page and allowing for extra details - rows - on the other side of the page.
 
