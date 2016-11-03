@@ -29,18 +29,7 @@ img {
     height: auto;
     vertical-align: baseline;
 }
-.video-container {
-    position: relative;
-    overflow: hidden;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
+
 a {
     text-decoration: none;
 }
@@ -57,8 +46,9 @@ h3 {
     padding: 2em 0 3em;
     overflow: hidden;
 }
+
+ /* left side. generator presentation. This is a column */
 .part1 {
-    z-index: 10;
     background-image: url(../images/front.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,16 +77,20 @@ h3 {
 }
 .cover-holder h1 span {
     display: block;
-    color: rgba(20, 20, 20, 0.45);
+    color: rgba(0, 255, 0, 0.65);
     font-weight: 700;
     font-size: 4rem;
 }
+
+ /* sun  spinning */
 .cover-holder img {
     padding-top: 10px;
-    opacity: 0.9;
+    opacity: 0.6;
     z-index: 8;
     -webkit-animation-name: spin;
+    /* the duration sets the speed of the spinning */
     -webkit-animation-duration: 40000ms;
+    /* infinite spinning */
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spin;
@@ -108,6 +102,7 @@ h3 {
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 }
+/* this is the actual spinning */
 @-webkit-keyframes spin {
     from {
         -webkit-transform: rotate(0deg);
@@ -116,24 +111,13 @@ h3 {
         -webkit-transform: rotate(360deg);
     }
 }
-#show {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-#show:hover {
-    border: none;
-    background: red;
-    box-shadow: 0px 0px 1px #D32F2F;
-}
+
 .part2 {
     padding: 0;
 }
+/* The flex-direction property specifies the direction of the flexible items. 
+
+The flex-wrap property specifies whether the flexible items should wrap or not. */
 .story {
     display: -webkit-box;
     display: -webkit-flex;
@@ -204,18 +188,21 @@ input {
     font-size: 23px;
     box-sizing: border-box;
 }
+ /* footer styling */
+
 .footer-center,
 .footer-left,
 .footer-right {
     display: inline-block;
     vertical-align: top;
 }
+
 .footer-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #33383b;
+    background-color: green;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -225,13 +212,13 @@ input {
     margin-bottom: 5px;
 }
 
+ /* generator word display button */
+
 #show {
     background-color: #4CAF50;
-    /* Green */
-    
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -243,6 +230,24 @@ input {
     background: red;
     box-shadow: 0px 0px 1px #D32F2F;
 }
+
+ /* container to control iframe display - google maps */
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+ /* resposnive styling */
+
 @media (max-width: 1024px) {
     .cover-holder input[type=text] {
         font-size: 15px;
@@ -250,6 +255,8 @@ input {
     .picture-box {
         display: none;
     }
+     /* google maps disappear. footer info takes over */
+
     #notmob {
         display: none;
     }
