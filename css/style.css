@@ -173,6 +173,10 @@ The flex-wrap property specifies whether the flexible items should wrap or not. 
     font-size: 1em;
     margin-top: auto;
 }
+
+.story .textbox p:hover {
+    color: #000;
+}
 .story .textbox textarea,
 input {
     padding: 10px;
@@ -210,6 +214,7 @@ input {
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 
  /* generator word display button */
