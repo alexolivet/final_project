@@ -11,6 +11,11 @@ The scope of the project was to create a web site and apply as many things as we
 In this scenario I used HTML, CSS, JS, PHP.
 
 
+ERROR PAGES
+
+The site contains 2 php pages. the first page is the error page. This one can be accessed on contact-form-handler.php. It can be completely customized. The second page is in actual fact just an empty HTML, with no style, throwing the Thank Alert and sending visitors back to the index page.
+
+
 URL: http://positivegenerator.elwebman.nl
 # final_project
 positive word generator (JS) with php email script.
